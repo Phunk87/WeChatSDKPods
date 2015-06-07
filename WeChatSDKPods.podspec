@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WeChatSDKPods"
-  s.version          = "1.5.0"
+  s.version          = "1.0.0"
   s.summary          = "WeChatSDK's Pods"
   s.homepage         = "https://github.com/0dayZh/WeChatSDKPods"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
