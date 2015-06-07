@@ -1,8 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_FRAMEWORK_BUILD_PATH"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = ${PODS_ROOT}/Headers/Public/WeChatSDKPods
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/../../Pod/Library/lib"
 OTHER_CFLAGS = $(inherited) -iquote "$PODS_FRAMEWORK_BUILD_PATH/WeChatSDKPods.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "WeChatSDKPods"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"WeChatSDK" -l"sqlite3.0" -l"stdc++" -l"z" -framework "SystemConfiguration"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-WeChatSDKPods_Tests
 PODS_ROOT = ${SRCROOT}/Pods

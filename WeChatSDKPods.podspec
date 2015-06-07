@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WeChatSDKPods"
-  s.version          = "0.1.0"
+  s.version          = "1.5.0"
   s.summary          = "WeChatSDK's Pods"
   s.homepage         = "https://github.com/0dayZh/WeChatSDKPods"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -21,24 +21,18 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'WeChatSDKPods' => ['Pod/Assets/*.png']
-  }
 
   s.public_header_files = "Pod/Library/include/WeChat/*.h"
   s.source_files = 'Pod/Library/include/**/*.h'
-  s.resource_bundles = {
-    'WeChatSDKPods' => ['Pod/Assets/images.bundle/*.png']
-  }
 
-  # s.frameworks = "UIKit", "Foundation", "CoreGraphics", "MediaPlayer", "CoreAudio", "AudioToolbox", "Accelerate", "QuartzCore", "OpenGLES", "AVFoundation", "CoreMedia"
-  # s.libraries = "iconv", "z", "bz2"
+  s.frameworks = "SystemConfiguration"
+  s.libraries = "z", "sqlite3.0", "stdc++"
 
   s.default_subspec = "precompiled"
 
   s.subspec "precompiled" do |ss|
     ss.preserve_paths         = "Pod/Library/include/WeChat/*.h", 'Pod/Library/lib/*.a'
     ss.vendored_libraries   = 'Pod/Library/lib/*.a'
-    ss.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/WeChat/lib/include" }
+    ss.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/Headers/Public/#{s.name}" }
   end
 end
