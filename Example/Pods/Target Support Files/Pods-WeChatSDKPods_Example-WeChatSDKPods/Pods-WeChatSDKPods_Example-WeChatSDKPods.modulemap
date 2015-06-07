@@ -1,0 +1,6 @@
+framework module WeChatSDKPods {
+  umbrella header "Pods-WeChatSDKPods_Example-WeChatSDKPods-umbrella.h"
+
+  export *
+  module * { export * }
+}

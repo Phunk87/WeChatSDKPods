@@ -1,0 +1,14 @@
+PODS:
+  - WeChatSDKPods (0.1.0)
+
+DEPENDENCIES:
+  - WeChatSDKPods (from `../`)
+
+EXTERNAL SOURCES:
+  WeChatSDKPods:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WeChatSDKPods: 5b3f8698d82d8f8c2ca54a7c2d1c3ad9f05b7742
+
+COCOAPODS: 0.37.2
