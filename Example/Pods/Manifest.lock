@@ -1,16 +1,16 @@
 PODS:
-  - WeChatSDKPods (1.0.0):
-    - WeChatSDKPods/precompiled (= 1.0.0)
-  - WeChatSDKPods/precompiled (1.0.0)
+  - WeChatSDKPods (1.6.1):
+    - WeChatSDKPods/precompiled (= 1.6.1)
+  - WeChatSDKPods/precompiled (1.6.1)
 
 DEPENDENCIES:
   - WeChatSDKPods (from `../`)
 
 EXTERNAL SOURCES:
   WeChatSDKPods:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  WeChatSDKPods: 2f263e39756043c428aab2a81b95e8895db9641d
+  WeChatSDKPods: 4d729081ddfa7c2337b954efda91d573859e7c64
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

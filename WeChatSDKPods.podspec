@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WeChatSDKPods"
-  s.version          = "1.0.0"
+  s.version          = "1.6.1"
   s.summary          = "WeChatSDK's Pods"
   s.homepage         = "https://github.com/0dayZh/WeChatSDKPods"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.public_header_files = "Pod/Library/include/WeChat/*.h"
   s.source_files = 'Pod/Library/include/**/*.h'
 
-  s.frameworks = "SystemConfiguration"
+  s.frameworks = "SystemConfiguration", "CoreTelephony"
   s.libraries = "z", "sqlite3.0", "stdc++"
 
   s.default_subspec = "precompiled"
