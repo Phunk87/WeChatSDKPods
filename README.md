@@ -22,7 +22,7 @@ pod "WeChatSDKPods"
 
 WeChatSDK version
 
-- Now 1.5
+- Now 1.6.1
 
 ## Author
 
